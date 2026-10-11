@@ -1,0 +1,15 @@
+{
+  "name": "ds-agent-ready",
+  "version": "0.1.0",
+  "description": "Is this design system agent-ready? An audit and an on-system checker for AI-generated UI code, using IBM Carbon as the test case.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Randall Carlisle",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "audit": "node src/audit.mjs",
+    "check": "node src/checker.mjs",
+    "test": "node --test",
+    "extract": "node scripts/extract-carbon.mjs"
+  }
+}
